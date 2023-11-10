@@ -98,7 +98,7 @@
             <p>The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the<span class="boxContainer">center</span> class to your <span class="boxContainer">
                 <<span class="token tag">a class="brand-logo"</span>></span>. You will have to make sure yourself that links do not overlap if you use this.</p>
             <nav>
-                <div class="nav-wrapper yellow">
+                <div class="nav-wrapper yellow black">
                     <a href="#" class="brand-logo center">Logo</a>
                     <ul id="nav-mobile" class="left hide-on-med-and-down">
                     <li><a href="sass.html">Sass</a></li>
@@ -114,31 +114,30 @@
                 <div class="nav-wrapper blue">
                     <a href="#!" class="brand-logo center">Logo</a>
                     <ul class="left hide-on-med-and-down">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li>
-                    <li class="active"><a href="collapsible.html">JavaScript</a></li>
+                    <li><a href="sass.html">Kits</a></li>
+                    <li><a href="badges.html">Icons</a></li>
+                    <li class="active"><a href="collapsible.html">Docs</a></li>
                     </ul>
                 </div>
             </nav>
 
             <h3 class="blue-text text-darken-3">Extended Navbar with Tabs</h3>
-            <p>To add extended components to the navbar, add the class <span class="boxContainer">nav-extended</span>to the outer nav tag. This will allow your navbar height to be variable. 
-                Then you can just include a tabs component inside the nav-wrapper.</p>
+            <p>To add extended components to the navbar, add the class <span class="boxContainer">nav-extended</span>to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.</p>
             <!-- navbar extended -->
             <nav class="nav-extended green">
                 <div class="nav-wrapper">
-                    <a href="fontawesome.com" class="brand-logo" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa-solid fa-bars"></i></a>
+                    <a href="fontawesome.com" class="brand-logo center" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="" data-target="mobile-demo" class="sidenav-trigger"><i class="fa-solid fa-bars"></i></a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="fontawesome.com/kits">Kits</a></li>
-                    <li><a href="fontawesome.com/icons">Icons</a></li>
-                    <li><a href="fontawesome.com/docs">Docs</a></li>
+                    <li class="active"><a href="fontawesome.com/kits" target="_blank">Kits</a></li>
+                    <li><a href="fontawesome.com/icons" target="_blank">Icons</a></li>
+                    <li><a href="fontawesome.com/docs" target="_blank">Docs</a></li>
                     </ul>
                 </div>
                 <div class="nav-content">
                     <ul class="tabs tabs-transparent">
-                    <li class="tab"><a href="#test1">Test 1</a></li>
-                    <li class="tab"><a class="active" href="#test2">Test 2</a></li>
+                    <li class="tab"><a class="active" href="#test1">Test 1</a></li>
+                    <li class="tab"><a href="#test2">Test 2</a></li>
                     <li class="tab"><a href="#test3">Test 3</a></li>
                     </ul>
                 </div>
@@ -146,11 +145,14 @@
             
             <ul class="sidenav" id="mobile-demo">
                 <li class="active">
-                    <a href="fontawesome.com/kits" target="_blank">Kits</a></li>
+                    <a href="fontawesome.com/kits" target="_blank">Kits</a>
+                </li>
                 <li>
-                    <a href="fontawesome.com/icons" target="_blank">Icons</a></li>
+                    <a href="fontawesome.com/icons" target="_blank">Icons</a>
+                </li>
                 <li>
-                    <a href="fontawesome.com/docs" target="_blank">Docs</a></li>
+                    <a href="fontawesome.com/docs" target="_blank">Docs</a>
+                </li>
                 </ul>
             
                 
@@ -162,10 +164,21 @@
                         </div>
                     </div>
                 </div>
+            <div class="row">
                 <div class="col s12" id="test2">
                     <div class="card">
                         <div class="card-image">
                             <img src="https://images.unsplash.com/photo-1698167646833-b705453b235e?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="responsive-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col s12" id="test3">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1682685797140-c17807f8f217?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="responsive-img">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -175,7 +188,7 @@
     <!-- Jquery CDN  -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materiazlize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <script>
         $(document).ready(function() {
@@ -184,8 +197,8 @@
             // Sidenmav Init
                 $('.sidenav').sidenav({
                     edge: 'right',
-                    inDuration: 1000,
-                    outDuration: 1500,
+                    inDuration: 500,
+                    outDuration: 500,
                 });
 
         // Dropdown Init

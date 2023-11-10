@@ -15,3 +15,21 @@ blockquote{
     display: inline-block;
 
 }
+.stock-link{
+    font-weight: 120;
+    font-size: 14px;
+    line-height: 80%;
+}
+.stock-link-small{
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+}
+.stock-img{
+    margin-top: 20px;
+}
+.sticky-top
+{
+    position: sticky;
+    top: 20px;
+}
